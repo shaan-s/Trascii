@@ -37,7 +37,10 @@ def save(): #File -> Save. Saves a .trascii file.
     file = easygui.filesavebox(default="New Text File.trascii")
     f = open(file, "w")
     if img:
-        newpath = imgpath.replace("\\","\\\\")
+        try:
+            newpath = imgpath.replace("\\","\\\\")
+        except:
+            pass
         f.write(f"['{newpath}',{imgscale},{imgopacity},{imgoffset}]\n")
     else:
         f.write("[]")
