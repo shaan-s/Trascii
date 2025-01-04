@@ -20,11 +20,15 @@ Trascii includes 2 editing modes. To switch between them, press the Escape key, 
 
 ### Text mode
 
-Text mode operates like a typical text editor. 
+![typingindicator](https://github.com/user-attachments/assets/4daa8f87-c2bf-4d53-8612-1e32f34ef5cf)
+
+Text mode operates like a typical text editor. It is indicated by the "A" graphic. This is the only mode that allows the font to be changed outside of Courier New. Enter creates a newline and backspace works as usual. Editors must switch to grid mode to navigate using the arrow keys or mouse. A special command is CTRL+SPACE which allows the user to specify an amount of spaces to add.
 
 ### Grid mode
 
-In grid mode, characters are overwritten instead of displaced. The grid can be navigated by clicking anywhere on the screen, or using the arrow keys. Backspace only overrwrites the selected character.
+![editindicator](https://github.com/user-attachments/assets/f03418b9-250b-418b-a959-6ca900370d8e)
+
+In grid mode, characters are overwritten instead of displaced. It is indicated by the pencil writing graphic. The grid can be navigated by clicking anywhere on the screen, or using the arrow keys. Backspace only overwrites the selected character.
 
 
 ## File management
@@ -47,6 +51,15 @@ Trascii allows images to be placed behind art for tracing.
 
 The permissible file formats are .png, .jpg, .gif, or .bmp. The image can be resized, offset from the top-left, and made opaque.
 
+## Font
+
+Trascii also allows the font to be adjusted.
+
+<kbd>
+ <img src=https://github.com/user-attachments/assets/65fe5a37-53c3-454b-bc71-fabef8fc43d4>
+</kbd>
+
+Users can edit the font size, line spacing, and font face. Note that grid mode must use the font Courier New, and will not load in a different font. The font size can also be adjusted using CTRL+ and CTRL-. 
 
 # Installation
 
