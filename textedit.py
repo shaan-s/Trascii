@@ -26,6 +26,7 @@ def drawribbon(x,title,options): #Draw top menu GUI
 
 def export(): #File -> Export. Saves a txt file
     file = easygui.filesavebox(default="New Export.txt")
+    if not file: return
     f = open(file, "w")
     for line in text:
         for char in line:
@@ -35,6 +36,7 @@ def export(): #File -> Export. Saves a txt file
 
 def save(): #File -> Save. Saves a .trascii file.
     file = easygui.filesavebox(default="New Text File.trascii")
+    if not file: return
     f = open(file, "w")
     if img:
         try:
@@ -94,7 +96,7 @@ try: #Failsafe (don't lose work even if it crashes)
     imgscale = 1
     imgopacity = 204
     imgoffset = [0,0]
-    caption_text = "Trascii Editor v0.7"
+    caption_text = "Trascii Editor v0.8"
 
     loadfilename = ""
     img = False
@@ -290,7 +292,7 @@ try: #Failsafe (don't lose work even if it crashes)
         fontbox = drawribbon(2,"Font",["Size","Line Spacing","Typeface"])
         try:
             if fontbox == 0:
-                fontsize = easygui.integerbox("Please enter the desired font size, in pixels (Default 12)","Font Options: Size")
+                fontsize = int(easygui.integerbox("Please enter the desired font size, in pixels (Default 12)","Font Options: Size"))
             elif fontbox == 1:
                 linespacingiv = float(easygui.enterbox("Please enter the desired line spacing, in relative font heights (Default 1.5)","Font Options: Spacing"))
         except:
