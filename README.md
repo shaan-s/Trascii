@@ -1,6 +1,6 @@
 # Introduction
 
-Trascii is a custom text editor built for creating ASCII art. Attempting to create monospaced ASCII art in a typical document proccessor leads to many issues – inconsistent spacing, spellcheck, and substitutions (e.g. ... to …). Trascii aims to solve these issues by adding features specifically designed to make ASCII art easier.
+Trascii is a custom text editor built for creating ASCII art. Attempting to create monospaced ASCII art in a typical document proccessor leads to many issues – inconsistent spacing, spellcheck, and substitutions (e.g. `...` to `…`). Trascii aims to solve these issues by adding features specifically designed to make ASCII art easier.
 
 The main feature of Trascii is its grid editing mode. It allows users to overwrite characters without ruining the spacing of the rest of the artwork. It also allows easy navigation between sections of the image. The editor automatically adds spaces, meaning the entire canvas is always accessible.
 
